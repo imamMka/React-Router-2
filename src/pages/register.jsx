@@ -44,7 +44,7 @@ function Register() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-b from-gray-100 to-gray-700 p-5">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-b from-gray-100 to-[#00b4d8] p-5">
       <div className="w-full max-w-md bg-white rounded-2xl shadow-2xl p-8">
         <h1 className="text-2xl font-bold text-center text-gray-800 mb-6">
           Register
@@ -111,7 +111,7 @@ function Register() {
           {/* Tombol register */}
           <button
             type="submit"
-            className="bg-indigo-900 hover:bg-black text-white font-semibold py-3 rounded-lg shadow-md transition duration-200"
+            className="bg-[#0077b6] hover:bg-[#003566] text-white font-semibold py-3 rounded-lg shadow-md transition duration-200"
             onChange={Navigate}
           >
             Register
@@ -120,7 +120,7 @@ function Register() {
 
         <p className="text-center text-sm text-gray-600 mt-4">
           Sudah punya akun?{" "}
-          <Link to="/login" className="text-indigo-600 hover:underline">
+          <Link to="/login" className="text-[#001d3d] hover:underline">
             Login
           </Link>
         </p>

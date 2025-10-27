@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const getUsers = async () => {
     try {
-        const response = await axios.get(`http://localhost:3000/users`)
+        const response = await axios.get(`http://localhost:5000/users`)
         console.log(response.data.data);
         return response.data.data;
 
@@ -13,7 +13,7 @@ export const getUsers = async () => {
 
 export const deleteUser = async(id) => {
     try {
-        await axios.delete(`http://localhost:3000/users/${id}`);
+        await axios.delete(`http://localhost:5000/users/${id}`);
         return "Data User Berhasil Dihapus";
     } catch (error) {
         console.log(error);
