@@ -24,7 +24,7 @@ export default function DataTable({ columns, data }) {
   return (
     <div className="overflow-hidden border ">
       <Table>
-        <TableHeader className="bg-slate-400">
+        <TableHeader className="bg-blue-200">
           {table.getHeaderGroups().map((headerGroup) => (
             <TableRow key={headerGroup.id}>
               {headerGroup.headers.map((header) => {

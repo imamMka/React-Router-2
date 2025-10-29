@@ -19,3 +19,16 @@ export const deleteUser = async(id) => {
         console.log(error);
     }
 }
+
+export const addUser = async (data) => {
+    try {
+    const response = await axios.post("http://localhost:5000/users", data);
+    // console.log("Response backend:", response.data);
+    console.log("Data dikirim ke backend:", JSON.stringify(data, null, 2));
+
+    return response.data.message; // ✅ ambil message
+  } catch (error) {
+    console.error("Error addUser:", error.response?.data || error.message);
+    throw error;
+  }
+}
