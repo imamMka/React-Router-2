@@ -3,9 +3,9 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { getUserById } from "@/utils/api/users";
 import { useState, useEffect } from "react";
-import { Navigate, useParams } from "react-router-dom";
+import { Navigate, useParams,useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+
 
 function DetailUser() {
   const [user, setUser] = useState([]);
