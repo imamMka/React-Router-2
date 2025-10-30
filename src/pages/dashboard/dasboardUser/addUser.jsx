@@ -60,8 +60,12 @@ function AddUser() {
     console.log(data);
     try {
       const message = await addUser(data);
-      Swal.fire("User berhasil ditambahkan: " + message);
-      navigate("dashboard/user");
+      Swal.fire({
+        title: "User berhasil ditambahkan",
+        icon: "success",
+        draggable: true
+      });
+      navigate("/dashboard/user");
     } catch (error) {
       console.error("Error adding user:", error);
       Swal.fire({

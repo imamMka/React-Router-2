@@ -11,6 +11,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
+import { useNavigate } from "react-router-dom";
 
 export const columns = [
   {
@@ -49,6 +50,7 @@ export const columns = [
     header: "Aksi",
     cell: ({ row }) => {
       const id = row.original.id;
+      const navigate = useNavigate();
 
       // handler delete user
 
@@ -63,9 +65,9 @@ export const columns = [
       };
 
       return (
-        <div>
+        <div className="flex gap-2">
           {/* Button Info */}
-          <button onClick={() => console.log("Ini Butto Info`")}>
+          <button onClick={() => navigate(`/dashboard/user/${id}`)}>
             <Info size={20} />
           </button>
           {/* Button Edit */}

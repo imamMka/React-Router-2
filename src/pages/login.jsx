@@ -42,7 +42,7 @@ function Login() {
     console.log("Login data:", data);
 
     // 👉 setelah login sukses, pindah ke dashboard
-    Navigate("/dashboard");
+    Navigate("/dashboard/user");
   };
 
   return (

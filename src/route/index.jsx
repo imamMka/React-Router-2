@@ -3,6 +3,7 @@ import Login from "../pages/login";
 import Register from "../pages/register";
 import DashboardUser from "../pages/dashboard/dasboardUser/dashboardUser";
 import AddUser from "@/pages/dashboard/dasboardUser/addUser";
+import DetailUser from "@/pages/dashboard/dasboardUser/detailUser";
 import NotFound from "../pages/404notfound";
 
 export default function Route() {
@@ -13,6 +14,7 @@ export default function Route() {
     { path: "/register", element: <Register /> },
     { path: "/dashboard/user", element: <DashboardUser /> },
     { path: "/dashboard/user/add", element: <AddUser /> },
+    { path: "/dashboard/user/:id", element: <DetailUser /> },
     // { path: "/dashboard/product", element: <DashboardProduct /> },
     ]
 );
